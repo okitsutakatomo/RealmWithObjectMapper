@@ -15,6 +15,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        
+        // このように呼びだしたいが、'Cannot invoke initializer for type 'User' with an argument list of type '(forPrimaryKey: String)'と怒られる。
+        let user = User(forPrimaryKey: "1")
+        
         // Override point for customization after application launch.
         return true
     }
