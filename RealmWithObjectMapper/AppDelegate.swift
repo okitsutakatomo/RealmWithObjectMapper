@@ -17,8 +17,34 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
         // このように呼びだしたいが、'Cannot invoke initializer for type 'User' with an argument list of type '(forPrimaryKey: String)'と怒られる。
-        let user = User(forPrimaryKey: "1")
+        // let hoge = User.objectForID("10")
+       
+        // 以下確認用のサンプルコード
+        let json = "{\"id\": \"1\", \"name\": \"katsumi\"}"
+        let user = Mapper<User>().map(json)
         
+        println("user: \(user?.id, user?.name)")
+        
+        let realm = RLMRealm.defaultRealm()
+        
+        realm.transactionWithBlock { () -> Void in
+            realm.addOrUpdateObject(user)
+        }
+        
+        let results = User.objectsInRealm(realm, "id = %@", "1")
+        println("results: \(results)")
+        
+        
+        if let u = User.objectForID("1") as? User {
+            println("user: \(u)")
+            
+            let string = Mapper<User>().toJSON(u)
+            println("user: \(string)")
+
+        } else {
+            println("user: null")
+        }
+                
         // Override point for customization after application launch.
         return true
     }

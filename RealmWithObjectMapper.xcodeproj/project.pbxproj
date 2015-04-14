@@ -28,6 +28,8 @@
 		03B7ED841ADCB4FD00AE4A53 /* TransformOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B7ED761ADCB4FD00AE4A53 /* TransformOf.swift */; };
 		03B7ED851ADCB4FD00AE4A53 /* TransformType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B7ED771ADCB4FD00AE4A53 /* TransformType.swift */; };
 		03B7ED861ADCB4FD00AE4A53 /* URLTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B7ED781ADCB4FD00AE4A53 /* URLTransform.swift */; };
+		03B7ED8A1ADD0C3300AE4A53 /* RLMObject+ObjectMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B7ED891ADD0C3300AE4A53 /* RLMObject+ObjectMapper.swift */; };
+		03B7ED8C1ADD0E5D00AE4A53 /* RLMSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B7ED8B1ADD0E5D00AE4A53 /* RLMSupport.swift */; };
 		C499151D048F055BE979D5B8 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C039D59B0E8C383B0B4303F0 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +71,8 @@
 		03B7ED761ADCB4FD00AE4A53 /* TransformOf.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransformOf.swift; sourceTree = "<group>"; };
 		03B7ED771ADCB4FD00AE4A53 /* TransformType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransformType.swift; sourceTree = "<group>"; };
 		03B7ED781ADCB4FD00AE4A53 /* URLTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLTransform.swift; sourceTree = "<group>"; };
+		03B7ED891ADD0C3300AE4A53 /* RLMObject+ObjectMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RLMObject+ObjectMapper.swift"; sourceTree = "<group>"; };
+		03B7ED8B1ADD0E5D00AE4A53 /* RLMSupport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RLMSupport.swift; sourceTree = "<group>"; };
 		222CDD7C1398BA59456CD1C5 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		6215DF0E3C072AC80757CD4C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		C039D59B0E8C383B0B4303F0 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -125,6 +129,8 @@
 				03B7ED1F1ADCB0AA00AE4A53 /* Supporting Files */,
 				03B7ED421ADCB27B00AE4A53 /* User.swift */,
 				03B7ED441ADCB2B600AE4A53 /* RealmWithObjectMapper-Bridging-Header.h */,
+				03B7ED891ADD0C3300AE4A53 /* RLMObject+ObjectMapper.swift */,
+				03B7ED8B1ADD0E5D00AE4A53 /* RLMSupport.swift */,
 			);
 			path = RealmWithObjectMapper;
 			sourceTree = "<group>";
@@ -354,6 +360,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03B7ED8A1ADD0C3300AE4A53 /* RLMObject+ObjectMapper.swift in Sources */,
 				03B7ED7F1ADCB4FD00AE4A53 /* CustomDateFormatTransform.swift in Sources */,
 				03B7ED241ADCB0AA00AE4A53 /* ViewController.swift in Sources */,
 				03B7ED841ADCB4FD00AE4A53 /* TransformOf.swift in Sources */,
@@ -369,6 +376,7 @@
 				03B7ED831ADCB4FD00AE4A53 /* ISO8601DateTransform.swift in Sources */,
 				03B7ED7A1ADCB4FD00AE4A53 /* Mapper.swift in Sources */,
 				03B7ED7B1ADCB4FD00AE4A53 /* Operators.swift in Sources */,
+				03B7ED8C1ADD0E5D00AE4A53 /* RLMSupport.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

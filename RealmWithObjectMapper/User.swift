@@ -10,11 +10,15 @@ import Foundation
 
 class User: RLMObject, Mappable {
     
-    var id:String?
-    var name:String?
+    dynamic var id:String = ""
+    dynamic var name:String?
     
-    required init?(_ map: Map) {
+    override init!() {
         super.init()
+    }
+    
+    required convenience init?(_ map: Map) {
+        self.init()
         mapping(map)
     }
     
